@@ -1,0 +1,210 @@
+/* footer*/
+.footer{
+    background-color: #1A2833;
+    .group-top{
+        display: flex;
+        gap: 20px;
+        padding: 50px 0;
+        ul{
+            li{
+                a{
+                    display: block;
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .f-list{
+            flex: 1;
+            display: flex;
+        }
+        .f-item{
+            flex: 1;
+            a{
+                
+            }
+        }
+        .r-list{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .r-item{
+            a{
+                
+            }
+        }
+        .sub-list{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding-top: 20px;
+            li{
+                a{
+                    color: #dfdfdf;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .headline{
+        margin-top: 20px;
+        color: #fcfcfc;
+    }
+    // .col-left{
+    //     flex: 1;
+    //     p{
+    //         margin-top: 20px;
+    //         padding-right: 25%;
+    //         color: #fcfcfc;
+    //         font-size: 21px;
+    //         line-height: 24px;
+    //         font-weight: 300;
+    //     }
+    // }
+    // .col-right{
+    //     flex: 1;
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 20px;
+    // }
+    .connect-wrap{
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        align-self: stretch;
+        color: #fcfcfc;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 15px;
+        border-radius: 15px;
+        padding: 35px 35px 35px 40px;
+        background: #293b4a;
+        &:hover{
+            background-color: #324554;
+        }
+        a{
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            align-self: stretch;
+            color: #fcfcfc;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    
+    .group-bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #fcfcfc87;
+        padding: 20px 0 15px;
+        p{
+            font-size: 13px;
+            font-family: 'Azeret Mono', monospace;
+            color: #fcfcfc;
+            font-weight: 400;
+        }
+        .btn-box{
+            display: flex;
+            align-items: center;
+            color: #fcfcfc;
+        }
+        .f-btn{
+            padding: 10px;
+            font-size: 13px;
+            font-weight: 400;
+            font-family: 'Azeret Mono', monospace;
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .footer{
+        .group-top {
+            ul {
+            li {
+            a{
+                font-size: 16px;
+            }
+            }
+        }
+    }
+    .group-bottom {
+        padding: 10px 0;
+        p{
+            font-size: 10px;
+        }
+        .f-btn{
+            font-size: 10px;
+            padding: 5px 10px;
+        }
+    }
+    }
+}
+
+@media(max-width:720px){
+    .footer{
+        .group-top {
+            ul {
+            li {
+            a{
+                font-size: 12px;
+            }
+            }
+        }
+        .sub-list {
+            li {
+            a{
+                font-size: 11px;
+            }
+            }
+        }
+    }
+    .group-bottom {
+        padding: 10px 0;
+        p{
+            font-size: 10px;
+        }
+        .f-btn{
+            font-size: 10px;
+            padding: 5px 10px;
+        }
+    }
+    }
+}
+@media(max-width:500px){
+    .footer {
+         .group-top{
+            flex-direction: column;
+            .f-list{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 40px;
+            }
+            .r-list{
+                margin-top: 20px;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+            }
+            .sub-list{
+                padding-top: 10px;
+                gap: 8px;
+            }
+         }
+         .group-bottom{
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            .btn-box{
+                margin-left: -4px;
+            }
+            .f-btn{
+                padding: 4px;
+            }
+         }
+    }
+}
