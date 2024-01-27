@@ -1378,6 +1378,9 @@ fa-arrow-up::before {
   .sc-challenge .txt-box a {
     font-size: 16px;
   }
+  .sc-challenge .inner {
+    padding-left: 20px;
+  }
   .sc-challenge .group-con01 {
     display: none;
   }
@@ -1404,6 +1407,7 @@ fa-arrow-up::before {
     font-size: 14px;
   }
   .sc-challenge .mo-group-con01 .con-item p {
+    margin-top: 10px;
     font-size: 12px;
     overflow: hidden;
     white-space: normal;

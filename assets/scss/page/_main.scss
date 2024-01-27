@@ -867,6 +867,9 @@ fa-arrow-up::before {
             font-size: 16px;
         }
         }
+        .inner{
+            padding-left: 20px;
+        }
         .group-con01{display: none;}
         .mo-group-con01 {
             display: block;
@@ -887,6 +890,7 @@ fa-arrow-up::before {
                 font-size: 14px;
             }
             p{
+                margin-top: 10px;
                 font-size: 12px;
                 overflow: hidden;
                 white-space: normal;
