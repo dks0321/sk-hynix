@@ -377,6 +377,10 @@ h2.title {
     font-size: 10px;
     padding: 5px 10px;
   }
+  .footer .group-bottom .btn-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 @media (max-width: 720px) {
   .footer .group-top ul li a {
