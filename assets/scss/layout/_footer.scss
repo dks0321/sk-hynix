@@ -30,11 +30,6 @@
             flex-direction: column;
             gap: 16px;
         }
-        .r-item{
-            a{
-                
-            }
-        }
         .sub-list{
             display: flex;
             flex-direction: column;
@@ -52,23 +47,6 @@
         margin-top: 20px;
         color: #fcfcfc;
     }
-    // .col-left{
-    //     flex: 1;
-    //     p{
-    //         margin-top: 20px;
-    //         padding-right: 25%;
-    //         color: #fcfcfc;
-    //         font-size: 21px;
-    //         line-height: 24px;
-    //         font-weight: 300;
-    //     }
-    // }
-    // .col-right{
-    //     flex: 1;
-    //     display: flex;
-    //     flex-direction: column;
-    //     gap: 20px;
-    // }
     .connect-wrap{
         display: flex;
         gap: 40px;
@@ -109,6 +87,7 @@
         }
         .btn-box{
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             color: #fcfcfc;
         }
@@ -142,9 +121,6 @@
         .f-btn{
             font-size: 10px;
             padding: 5px 10px;
-        }
-        .btn-box{
-            flex-wrap: wrap;
         }
     }
     }

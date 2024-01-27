@@ -349,6 +349,8 @@ h2.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -376,10 +378,6 @@ h2.title {
   .footer .group-bottom .f-btn {
     font-size: 10px;
     padding: 5px 10px;
-  }
-  .footer .group-bottom .btn-box {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 @media (max-width: 720px) {
