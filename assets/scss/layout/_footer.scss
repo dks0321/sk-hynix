@@ -133,9 +133,11 @@
         }
     }
     .group-bottom {
+        display: block;
         padding: 10px 0;
         p{
-            font-size: 10px;
+            padding-left: 10px;
+            font-size: 11px;
         }
         .f-btn{
             font-size: 10px;
