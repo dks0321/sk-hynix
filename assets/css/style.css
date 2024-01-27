@@ -437,6 +437,7 @@ h2.title {
 }
 .inner {
   margin: 0 auto;
+  max-width: 1400px;
   padding: 0 100px;
   color: #272727;
 }
@@ -628,9 +629,11 @@ h2.title {
 .sc-challenge .txt-box a:hover {
   text-decoration: underline;
 }
+.sc-challenge .mo-group-con01 {
+  display: none;
+}
 .sc-challenge .group-con01 {
   margin-top: 15px;
-  overflow: inherit;
 }
 .sc-challenge .group-con01::before {
   content: "";
@@ -1037,6 +1040,7 @@ h2.title {
 .sc-service .inner {
   padding: 150px 0;
   width: 100%;
+  max-width: 100%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background: #dadada;
@@ -1366,17 +1370,39 @@ fa-arrow-up::before {
     width: 280px;
     height: 320px;
   }
+  .sc-challenge .prev, .sc-challenge .next {
+    display: none;
+  }
   .sc-challenge .txt-box a {
     font-size: 16px;
   }
-  .sc-challenge .group-con01 .con-item {
+  .sc-challenge .group-con01 {
+    display: none;
+  }
+  .sc-challenge .mo-group-con01 {
+    display: block;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  .sc-challenge .mo-group-con01 .con-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+    overflow-x: scroll;
+  }
+  .sc-challenge .mo-group-con01 .con-item {
     padding: 20px;
+    background: #e7ebed;
+    border-radius: 14px;
+    width: 200px;
+    height: 200px;
   }
-  .sc-challenge .group-con01 .con-item h3 {
-    font-size: 15px;
-  }
-  .sc-challenge .group-con01 .con-item p {
+  .sc-challenge .mo-group-con01 .con-item h3 {
     font-size: 14px;
+  }
+  .sc-challenge .mo-group-con01 .con-item p {
+    font-size: 12px;
     overflow: hidden;
     white-space: normal;
     text-overflow: ellipsis;
