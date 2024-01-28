@@ -137,19 +137,12 @@
                     font-size: 52px;
                 }
             }
-            // .img-box{
-            //     padding:0 70px 0 70px;
-            //     img{
-            //         height: 100%;
-            //     }
-            // }
         }
     }
 
 /* sc-challenge */
 .sc-challenge{
     padding: 150px 0;
-    overflow: hidden;
     .category{
         color: #f5581e;
         font-family: 'Azeret Mono', monospace; 
@@ -157,6 +150,7 @@
     .txt-box {
         margin-top: 24px;
         display: flex;
+        flex-wrap: wrap;
         a{
             display: block;
             padding: 0 5px;
@@ -170,20 +164,9 @@
     }
     .mo-group-con01{display: none;}
     .group-con01{
+        position: relative;
         margin-top: 15px;
-        &::before{
-            content: '';
-            position: absolute;
-            top: 0;
-            height: 100%;
-            right: 100%;
-            width: 100%;
-            background: #fff;
-            z-index: 2;
-        }
         .con-item{
-            margin-right: 10px;
-            max-width: 360px;
             height: 100%;
             min-height: 210px;
             border-radius: 15px;
@@ -191,12 +174,12 @@
             background: #e7ebed;
             font-family: 'Outfit', sans-serif;
             h3{
-                font-size: 21px;
+                font-size: 20px;
                 line-height: 21px;
                 font-weight: 600;
             }
             p{
-                margin-top: 35px;
+                margin-top: 20px;
                 font-size: 16px;
                 line-height: 21px;
                 overflow: hidden;
@@ -258,7 +241,7 @@
 .sc-inspire{
     position: relative;
     display: flex;
-    height: 500vh;
+    height: 300vh;
     flex-direction: column;
     transition: 0.3s;
     z-index: 2;
@@ -555,8 +538,9 @@
         }
     }
     .group-strength{
-        margin-top: 40px;
-        padding: 0 9%;
+        margin: 40px auto 0;
+        padding: 0 100px;
+        max-width: 1400px;
         display: flex;
         gap: 20px;
     }
@@ -884,8 +868,8 @@ fa-arrow-up::before {
                 padding: 20px;
                 background: #e7ebed;
                 border-radius: 14px;
-                width: 200px;
-                height: 200px;
+                width: 180px;
+                height: 180px;
             h3{
                 font-size: 14px;
             }
@@ -963,8 +947,14 @@ fa-arrow-up::before {
     }
 }
 @media(max-width:500px){
+    section{
+        min-width: 320px;
+    }
     .headline{
         font-size: 18px;
+    }
+    .inner{
+        padding:0 5%;
     }
     .link {
         padding: 5px;
@@ -974,10 +964,12 @@ fa-arrow-up::before {
     }
     .category{font-size: 10px;}
     .sc-intro{
+        min-width: 320px;
         .scroll{display: none;}
         .group-intro{
             flex-direction: column;
             .headline{
+                width: 100%;
                 padding-left: 0;
             }
         }
@@ -1005,35 +997,9 @@ fa-arrow-up::before {
                 font-size: 12px;
             }
         }
-        .group-con01 {
-            .con-item {
-                width: 150px;
-            h3{
-                font-size: 16px;
-                overflow: hidden;
-                white-space: normal;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-                word-break: keep-all;
-                line-height: 1;
-            }
-            p{
-                overflow: hidden;
-                white-space: normal;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 4;
-                -webkit-box-orient: vertical;
-                word-break: keep-all;
-                font-size: 14px;
-                line-height: 1;
-            }
-            }
-        }
     }
     .sc-inspire {
+        height: 150vh;
         .inspire-inner {
             .headline{
                 font-size: 42px;
@@ -1075,8 +1041,9 @@ fa-arrow-up::before {
             height: 120px;
         }
         .group-strength{
-            margin-top: 20px;
             flex-direction: column;
+            margin-top: 20px;
+            padding: 0 40px;
             .achievement-area{
                 width: 100%;
                 h3{
@@ -1099,12 +1066,11 @@ fa-arrow-up::before {
             gap: 12px;
         }
         .tit{
-            display: block;
+            display: -webkit-box;
             overflow: hidden;
             font-size: 14px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            line-height: 1;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
             i{
                 padding-right: 5px;
             }

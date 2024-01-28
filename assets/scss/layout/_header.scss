@@ -61,3 +61,8 @@
         .ham{display: block;}
     }
 }
+@media(max-width:1000px){
+    .header{
+        min-width: 320px;
+    }
+}

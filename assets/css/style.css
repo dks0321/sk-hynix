@@ -232,6 +232,11 @@ h2.title {
     display: block;
   }
 }
+@media (max-width: 1000px) {
+  .header {
+    min-width: 320px;
+  }
+}
 /* footer*/
 .footer {
   background-color: #1A2833;
@@ -399,6 +404,9 @@ h2.title {
   }
 }
 @media (max-width: 500px) {
+  .footer {
+    min-width: 320px;
+  }
   .footer .group-top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -611,7 +619,6 @@ h2.title {
 /* sc-challenge */
 .sc-challenge {
   padding: 150px 0;
-  overflow: hidden;
 }
 .sc-challenge .category {
   color: #f5581e;
@@ -622,6 +629,8 @@ h2.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .sc-challenge .txt-box a {
   display: block;
@@ -637,21 +646,10 @@ h2.title {
   display: none;
 }
 .sc-challenge .group-con01 {
+  position: relative;
   margin-top: 15px;
 }
-.sc-challenge .group-con01::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  right: 100%;
-  width: 100%;
-  background: #fff;
-  z-index: 2;
-}
 .sc-challenge .group-con01 .con-item {
-  margin-right: 10px;
-  max-width: 360px;
   height: 100%;
   min-height: 210px;
   border-radius: 15px;
@@ -660,12 +658,12 @@ h2.title {
   font-family: "Outfit", sans-serif;
 }
 .sc-challenge .group-con01 .con-item h3 {
-  font-size: 21px;
+  font-size: 20px;
   line-height: 21px;
   font-weight: 600;
 }
 .sc-challenge .group-con01 .con-item p {
-  margin-top: 35px;
+  margin-top: 20px;
   font-size: 16px;
   line-height: 21px;
   overflow: hidden;
@@ -731,7 +729,7 @@ h2.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 500vh;
+  height: 300vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1079,8 +1077,9 @@ h2.title {
   height: 100%;
 }
 .sc-service .group-strength {
-  margin-top: 40px;
-  padding: 0 9%;
+  margin: 40px auto 0;
+  padding: 0 100px;
+  max-width: 1400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1402,8 +1401,8 @@ fa-arrow-up::before {
     padding: 20px;
     background: #e7ebed;
     border-radius: 14px;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
   .sc-challenge .mo-group-con01 .con-item h3 {
     font-size: 14px;
@@ -1474,8 +1473,14 @@ fa-arrow-up::before {
   }
 }
 @media (max-width: 500px) {
+  section {
+    min-width: 320px;
+  }
   .headline {
     font-size: 18px;
+  }
+  .inner {
+    padding: 0 5%;
   }
   .link {
     padding: 5px;
@@ -1485,6 +1490,9 @@ fa-arrow-up::before {
   }
   .category {
     font-size: 10px;
+  }
+  .sc-intro {
+    min-width: 320px;
   }
   .sc-intro .scroll {
     display: none;
@@ -1496,6 +1504,7 @@ fa-arrow-up::before {
             flex-direction: column;
   }
   .sc-intro .group-intro .headline {
+    width: 100%;
     padding-left: 0;
   }
   .sc-intro .group-design .slide-area .circle {
@@ -1512,30 +1521,8 @@ fa-arrow-up::before {
     padding: 0 2px;
     font-size: 12px;
   }
-  .sc-challenge .group-con01 .con-item {
-    width: 150px;
-  }
-  .sc-challenge .group-con01 .con-item h3 {
-    font-size: 16px;
-    overflow: hidden;
-    white-space: normal;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    word-break: keep-all;
-    line-height: 1;
-  }
-  .sc-challenge .group-con01 .con-item p {
-    overflow: hidden;
-    white-space: normal;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    word-break: keep-all;
-    font-size: 14px;
-    line-height: 1;
+  .sc-inspire {
+    height: 150vh;
   }
   .sc-inspire .inspire-inner .headline {
     font-size: 42px;
@@ -1570,11 +1557,12 @@ fa-arrow-up::before {
     height: 120px;
   }
   .sc-service .group-strength {
-    margin-top: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 20px;
+    padding: 0 40px;
   }
   .sc-service .group-strength .achievement-area {
     width: 100%;
@@ -1597,12 +1585,11 @@ fa-arrow-up::before {
     gap: 12px;
   }
   .sc-faq .tit {
-    display: block;
+    display: -webkit-box;
     overflow: hidden;
     font-size: 14px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    line-height: 1;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
   .sc-faq .tit i {
     padding-right: 5px;

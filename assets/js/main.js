@@ -39,7 +39,7 @@ const bannerSlide = new Swiper('.sc-intro .banner-area', {
 
 //challenges swiper
 const challengeSlide = new Swiper('.group-con01',{
-    slidesPerView:3.3,
+    slidesPerView:3,
     spaceBetween:10,
     navigation:{
         prevEl:'.prev',

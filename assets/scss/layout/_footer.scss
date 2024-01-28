@@ -158,6 +158,7 @@
 }
 @media(max-width:500px){
     .footer {
+        min-width: 320px;
          .group-top{
             flex-direction: column;
             .f-list{
