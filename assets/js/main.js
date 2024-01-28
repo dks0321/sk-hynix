@@ -100,8 +100,6 @@ const challengeSlide = new Swiper('.group-con01',{
         })    
 
     })
-
-
     //project flow
     // line-fix
     ScrollTrigger.create({

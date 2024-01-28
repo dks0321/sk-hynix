@@ -1071,6 +1071,8 @@ fa-arrow-up::before {
             font-size: 14px;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
+            word-break: break-all;
+            text-overflow: ellipsis;
             i{
                 padding-right: 5px;
             }
