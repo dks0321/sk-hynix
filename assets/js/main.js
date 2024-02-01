@@ -13,7 +13,7 @@ $('.circle').each(function(i,el){
     })
 })
 
-//badge swiper
+//intro swiper
 swiperOn =gsap.timeline({
     scrollTrigger:{
         trigger:".sc-intro",
@@ -29,11 +29,11 @@ swiperOn.to('.content',{xPercent: -100,})
 const bannerSlide = new Swiper('.sc-intro .banner-area', {
     autoplay: {
         delay: 0, //add
-        disableOnInteraction: false,
+        disableOnInteraction: false,//마우스오버시일시정지
     },
     speed: 3000,
     loop: true,
-    loopAdditionalSlides: 1,
+    loopAdditionalSlides: 1,//마지막 슬라이드에서 끊기지 않고 계속 보여줌
     slidesPerView: 'auto',
 })
 
@@ -59,7 +59,6 @@ const challengeSlide = new Swiper('.group-con01',{
         opacity:0,
         stagger:0.1,
     })
-
 
 //Websites that inspire
     gsap.to('.sc-inspire .bg',{
